@@ -6,6 +6,8 @@ Authors and contacts:
 
 This code needs helpers.py which is stored in the same folder as this file. 
 The code needs ```Delphes``` installed and linked such that delphes library can be invoked. 
+Delphes can be found at
+``` https://cp3.irmp.ucl.ac.be/projects/delphes```
 In order for this to work, install Delphes and in your bashrc set following variables
 ```
 export DELPHESPATH=<PATH_TO_DELPHES_INSTALLATION>
