@@ -4,7 +4,13 @@ Authors and contacts:
 * Akanksha Singh: akki153209@gmail.com
 * Harikrishnan Nair: hunair1996@gmail.com
 
-This code needs helpers.py and histo_defs.py which are stored in the same folder as this file
+This code needs helpers.py which is stored in the same folder as this file. 
+The code needs ```Delphes``` installed and linked such that delphes library can be invoked. 
+In order for this to work, install Delphes and in your bashrc set following variables
+```
+export DELPHESPATH=<PATH_TO_DELPHES_INSTALLATION>
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DELPHESPATH
+```
 Following cuts on events are assumed
 jet1.PT > 500 and np.abs(jet1.Eta) < 2.5 and jet2.PT > 500 and np.abs(jet2.Eta) < 2.5
 We assume that different branches corresponding to different jet radii are defined in root files
