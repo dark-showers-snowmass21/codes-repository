@@ -14,9 +14,13 @@ export DELPHESPATH=<PATH_TO_DELPHES_INSTALLATION>
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DELPHESPATH
 ```
 Following cuts on events are assumed
+
 jet1.PT > 500 and np.abs(jet1.Eta) < 2.5 and jet2.PT > 500 and np.abs(jet2.Eta) < 2.5
-We assume that different branches corresponding to different jet radii are defined in root files
-In this code jet clustering radius is fixed to 1.4, can be changed at line 52
+
+We assume that different branches corresponding to different jet radii are defined in root files.
+
+In this code jet clustering radius is fixed to 1.4, can be changed at line 52 in analysis.py.
+
 This code will analyse input sample and create following reconstructed level normalized distributions:
 1) pt of leading/subleading jet
 2) dijet invarint mass
@@ -30,7 +34,7 @@ This code will analyse input sample and create following reconstructed level nor
 
 command: 
 ```
-python /path_of_code/transverse_mass.py /path_of_rootfile/name_of_rootfile.root /path_of_rootfile/output_name.root
+python /path_of_code/analysis.py /path_of_rootfile/name_of_rootfile.root /path_of_rootfile/output_name.root
 ```
 
 A test sample is available at
