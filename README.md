@@ -25,6 +25,9 @@ command:
 python /path_of_code/transverse_mass.py /path_of_rootfile/name_of_rootfile.root /path_of_rootfile/output_name.root
 ```
 
+A test sample is available at
+``` https://sandbox.zenodo.org/record/927391```
+
 Takes the rootfile as input and computes the defined variables and fills the respective histograms.
 
 Samples are stored at <Insert path>
