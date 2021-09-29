@@ -1,7 +1,8 @@
 Authors and contacts:
-Guillaume Albouy: guillaume.albouy@etu.grenoble-univ-alpes.fr
-Akanksha Singh: akki153209@gmail.com
-Harikrishnan Nair: hunair1996@gmail.com
+
+* Guillaume Albouy: guillaume.albouy@etu.grenoble-univ-alpes.fr
+* Akanksha Singh: akki153209@gmail.com
+* Harikrishnan Nair: hunair1996@gmail.com
 
 This code needs helpers.py and histo_defs.py which are stored in the same folder as this file
 Following cuts on events are assumed
@@ -19,9 +20,18 @@ This code will analyse input sample and create following reconstructed level nor
 8) delta eta between leading and subleading jet
 9) pt and invariant mass for trimmed and SoftDropped leading/subleading jets
 
-command: python /path_of_code/transverse_mass.py /path_of_rootfile/name_of_rootfile.root /path_of_rootfile/output_name.root
+command: 
+```
+python /path_of_code/transverse_mass.py /path_of_rootfile/name_of_rootfile.root /path_of_rootfile/output_name.root
+```
+
 Takes the rootfile as input and computes the defined variables and fills the respective histograms.
 
 Samples are stored at <Insert path>
 Delphes card used to create these samples is stored in cards folder.
-Cards folder also contains all the pythia command files used to generate signal. 
+Cards folder also contains all the pythia command files used to generate signal.
+The cards folder should contain the following
+  * Scalar mediator: two seperate directories one corresponding to rho to pi pi mode open and another one corresponding to rho to pi pi mode closed will be made available.
+  * Vector mediator: cards only for rho to pi pi mode closed are made available. (When rho decays to pions in this case, the final states will contain mostly missing energy and hence aren't very interesting)
+  
+Along with this ```plotter.py``` contains plotting scripts to make plots. These scrips are useful only when making 'global' plots to compare different Nc distributions for given Nf values. For immediate plotting purposes with one sample file, you will need to make your own code. 
