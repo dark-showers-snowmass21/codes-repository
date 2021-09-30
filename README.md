@@ -4,7 +4,6 @@ Authors and contacts:
 * Akanksha Singh: akki153209@gmail.com
 * Harikrishnan Nair: hunair1996@gmail.com
 
-This code needs helpers.py which is stored in the same folder as this file. 
 The code needs ```Delphes``` installed and linked such that delphes library can be invoked. 
 Delphes can be found at
 ``` https://cp3.irmp.ucl.ac.be/projects/delphes```
