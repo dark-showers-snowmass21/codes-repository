@@ -36,12 +36,13 @@ command:
 python /path_of_code/analysis.py /path_of_rootfile/name_of_rootfile.root /path_of_rootfile/output_name.root
 ```
 
+takes the rootfile as input and computes the defined variables and fills the respective histograms.
+
 A test sample is available at
 ``` https://sandbox.zenodo.org/record/927391```
 
-Takes the rootfile as input and computes the defined variables and fills the respective histograms.
-
-Samples are stored at <Insert path>
+Samples will be stored at Zenodo after initial testing is done.
+ 
 Delphes card used to create these samples is stored in cards folder.
 Cards folder also contains all the pythia command files used to generate signal.
 The cards folder should contain the following
