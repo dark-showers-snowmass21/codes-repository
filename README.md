@@ -48,5 +48,7 @@ Cards folder also contains all the pythia command files used to generate signal.
 The cards folder should contain the following
   * Scalar mediator: two seperate directories one corresponding to rho to pi pi mode open and another one corresponding to rho to pi pi mode closed will be made available.
   * Vector mediator: cards only for rho to pi pi mode closed are made available. (When rho decays to pions in this case, the final states will contain mostly missing energy and hence aren't very interesting)
+ 
+**Note added: The above definition of the samples will need to be changed as some of the settings are unphysical. The cards repository here will be updated at a later stage for this. The current sample can still be used for testing purposes. 
   
 Along with this ```plotter.py``` contains plotting scripts to make plots. These scrips are useful only when making 'global' plots to compare different Nc distributions for given Nf values. For immediate plotting purposes with one sample file, you will need to make your own code. 
