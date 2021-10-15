@@ -41,7 +41,7 @@ takes the rootfile as input and computes the defined variables and fills the res
 A test sample is available at
 ``` https://sandbox.zenodo.org/record/927391```
 
-Samples will be stored at Zenodo after initial testing is done.
+Samples will be stored at Zenodo after initial testing is done. Note: The root version used to create these samples should be mentioned in the Zenodo repo.
  
 Delphes card used to create these samples is stored in cards folder.
 Cards folder also contains all the pythia command files used to generate signal.
